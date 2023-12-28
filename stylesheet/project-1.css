@@ -1,0 +1,409 @@
+.welcome-container{
+    background-color: blue;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: white;
+    font-family: roboto;
+}
+.h2-1,
+.h1-2{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.grid-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.container{
+    display: inline-block;
+    width: 300px;
+}
+.info{
+    display: inline-block;
+    width: 50px;
+}
+.text-div .p1{
+    font-family: roboto;
+}
+
+.text-div{
+    display: inline-block;
+    width: 240px;
+    margin-top: 0;
+}
+.profpic{
+    width: 50px;
+    border-radius: 50px;
+}
+.thum-1{
+    width: 300px;
+}
+.thum-2{
+    width: 300px;
+    height: 200px;
+}
+.container-2{
+    display: inline-block;
+    width: 300px;
+}
+.header{
+display: flex;
+background-color: rgb(243, 242, 242);
+position: fixed;
+left: 0px;
+top: 0px;
+right: 0px; 
+flex-direction: row;
+justify-content: space-between;
+height: 50px;
+border:0 0 2px 0;
+border-bottom-style: solid;
+border-color: black;
+
+} 
+
+.left-section{
+    width: 200px;
+    align-items: center;
+    display: flex;
+}
+.humbur-logo{
+    height: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.youtube-logo{
+    height: 20px;
+}
+.middle-section{
+    flex: 1;
+    display: flex;
+    margin-left: 70px;
+    margin-right: 30px;
+    max-width: 500px;
+    border-color: gray;
+    justify-content: center;
+    align-items: center;
+
+}
+.search-bar{
+    height: 30px;
+    width: 0 ;
+    flex: 1;
+    font-size: 17px;
+    border-width: 1px;
+    min-width: 60px;
+    border-style: solid;
+    box-shadow: inset 2px 3px 5px rgb(0, 0, 0 2) ;
+   
+}
+.search-bar::placeholder{
+    font-size: 15px;
+    padding-left: 20px;
+    
+}
+.search-button{
+    width: 70px;
+    height: 40px;
+    position: relative;   
+    border-style: none; 
+    
+}
+.search-icon{
+    height: 32px;
+    border-color: gray;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 60px;
+    background-color: gainsboro;
+    border-style: solid;
+    border-width: 1px;
+    margin-right: 10px;
+    margin-left: -1px;
+    margin-top: 2px;
+    margin-left: -5px;
+    
+}
+.voice-search-button{
+    width: 70px;
+    height: 40px;
+    position: relative;
+    white-space: nowrap;
+}
+
+ .search-button .tooltips{
+    position: absolute;
+    background-color: grey;
+    padding: 3px 10px;
+    bottom: -20px;
+    opacity: 0;
+    left: -5px;
+    color: white;
+    pointer-events: none;
+    transition: opacity 0.10s;
+}
+.voice-search-button .tooltips{
+    background-color: grey;
+    position: absolute;
+    color: white;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.10s;
+    bottom: -15px;
+    left: 0;
+    pointer-events: none;
+}
+
+.search-button:hover .tooltips,
+.voice-search-button:hover .tooltips,
+.upload-video:hover .tooltips,
+.apps-div:hover .tooltips,
+.notification-div:hover .tooltips,
+.user-div:hover .tooltips{
+    opacity: 1;
+    cursor: pointer;
+}
+.voice-search-button{
+    border-style: none;
+}
+
+.voice-search{
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    background-color: gainsboro;
+}
+.right-section{
+    width: 200px;
+    margin-right: 30;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+     
+}
+.upload-video{
+    width: 80px;
+    color: white;
+    height: 40px;
+    position: relative;
+}
+.upload{
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+}
+.upload-video .tooltips{
+    background-color: grey;
+    position: absolute;
+    bottom: -10px;
+    padding: 1px 10px;
+    pointer-events: none;
+    opacity: 0;
+}
+.apps-div{
+    width: 50px;
+    height: 40px;
+    position: relative;
+    
+}
+.apps{
+    height: 30px;
+    margin-top: 5px;
+    margin-top: 10px;
+}
+.apps-div .tooltips{
+    background-color: grey;
+    padding: 2px 10px;
+    
+    pointer-events: none;
+    bottom: -80px;
+    color: white;
+    bottom: 10px;
+    opacity: 0;
+
+}
+.notification-div{
+    position: relative;
+    width: 50px;
+    height: 30px;
+}
+.notification-icon{
+    width: 20psx;
+    height: 30px;
+    margin-top: 12px;
+}
+.notification-count{
+    background-color: rgb(245, 11, 11);
+    position: absolute;
+    padding-right: 5px;
+    border-radius: 20px;
+    border-width: 1px;
+    top: 8px;
+    right: 18px;
+    height: 16px;
+    width: 12px;
+}
+
+.notification-div .tooltips{
+    position: absolute;
+    background-color: grey;
+    bottom: -20px;
+    opacity: 0;
+    color: white;
+    left: -20px;
+    bottom: -30px;
+    transition: opacity 0.10s;
+}
+.user-div{
+    width: 70px;
+    position: relative;
+    height: 40px;
+}
+.user-pic{
+    height: 40px;
+    border-radius: 50px;
+}
+.user-div .tooltips{
+    background-color: grey;
+    padding-left: 10px;
+    padding-right: 4px;
+    position: absolute;
+    color: white;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.b1{
+    position: relative;
+}
+.time{
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+}
+
+.side-bar{
+    
+    background-color: white;
+    right: 1250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    top: 50px;
+    right: 1250px;
+}
+.home-block{
+    width: 100%;
+    height: 80px;
+}
+.home{
+    width: 30px;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+.explore-block{
+    width: 100%;
+    height: 80px;
+}
+.explore{
+    width: 40px;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+.subscription-block{
+    width: 100%;
+    height: 80px;
+}
+.subscription{
+    width: 40px;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+.music-block{
+    width: 100%;
+    height: 80px;
+}
+.music{
+    width: 40px;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+.library-block{
+    width: 100%;
+    height: 80px;
+}
+.library{
+    width: 20px;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+.home-block:hover,
+.explore-block:hover,
+.subscription-block:hover,
+.music-block:hover,
+.library-block:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+.home-block .tooltips,
+.explore-block .tooltips,
+.subscription-block .tooltips,
+.music-block .tooltips,
+.library-block .tooltips{
+    font-size: 12px;
+    margin-left: 20px;
+    
+}
+@media(max-width:600px) {
+    .grid-1{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(min-width:750px) {
+    .grid-1{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media(min-width:1000px) {
+    .grid-1{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.h6{
+    font-size: 20px;
+    background-color: red;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+.watch-link{
+    color: blue;
+    margin-left: 20px;
+
+}
+.watch-link:hover{
+    color: black;
+    transition: 0.10s;
+    cursor: pointer;
+}
+.watch-link:active{
+    background-color: blue;
+    color: white;
+}
+.appreciation{
+    background-color: gray;
+}
